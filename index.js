@@ -6,8 +6,7 @@ const bodyParser = require ('body-parser')
 const mongoose = require ('mongoose')
 const User = require ('./models/userModel')
 
-mongoose.connect(`mongodb+srv://NaomiSchofield:I3AnAAx9HvOwtzwf@cluster0-c1rm4.mongodb.net/users?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true});
-// mongoose.connect(`mongodb+srv://NaomiSchofield:${process.env.password}@cluster0-c1rm4.mongodb.net/users?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true});
+/mongoose.connect(`mongodb+srv://NaomiSchofield:${process.env.password}@cluster0-c1rm4.mongodb.net/users?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 app.use(bodyParser.urlencoded({extended: false}))
