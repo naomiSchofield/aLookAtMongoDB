@@ -1,6 +1,13 @@
-<form action="/signUp" method="post">
-    <input type="text" name="userName" value="user name" />
-    <input type="text" name="password" value="Password" />
-    <input type="text" name="email" value="Email Address" />
-    <input type="submit" name="submit" value="submit">
+<form action="/signup" method="POST">
+	<label for="userName"> user name: </label>
+	<input type="text" name="userName" required>
+<br>
+	<label for="email">email: </label>
+    <input type="email" name="email" required>
+<br>
+	<label for="password">password: </label>
+    <input type="password" name="password" required>
+    <input type="submit"></input>
 </form>
+
+<p>{{err}}</p>

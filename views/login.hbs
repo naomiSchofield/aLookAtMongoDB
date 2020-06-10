@@ -1,6 +1,10 @@
-<form action="/login" method="post" enctype="multipart/form-data">
-    <input type="text" name="email" value="emailAddress" />
-    <input type="text" name="userName" value="User Name" />
-    <input type="text" name="password" value="Password" />
-    <input type="submit" name="userInput" value="Submit">
+<form action="/login" method="POST">
+	<label for="userName"> user name: </label>
+	<input type="text" name="userName" value="userName" required>
+<br>
+	<label for="password">password: </label>
+    <input type="password" name="password" value="password" required>
+    <input type="submit"></input>
 </form>
+
+<p>{{err}}</p>
